@@ -1,0 +1,13 @@
+:root {
+  --dark-bg-color: rgb(41, 41, 41);
+  --dark-text-color: white;
+  --dark-highlights-color: #720000;
+  --dark-content-bg-color: #a30000;
+  --dark-content-highlight-color: #3d080d;
+}
+
+body {
+  margin: 0;
+  color: var(--dark-text-color);
+  background-color: var(--dark-bg-color);
+}

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Content from "./components/Content.vue";
 import MenuBar from "./components/MenuBar.vue";
+import PageContent from "./components/PageContent.vue";
 </script>
 
 <template>
   <div>
     <MenuBar></MenuBar>
-    <Content></Content>
+    <PageContent></PageContent>
   </div>
 </template>

@@ -11,8 +11,9 @@
     "format": "prettier .  --write"
   },
   "dependencies": {
-    "vue": "^3.2.41",
-    "vue-material-design-icons": "^5.1.2"
+    "@jamescoyle/vue-icon": "^0.1.2",
+    "@mdi/js": "^7.0.96",
+    "vue": "^3.2.41"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",

@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import LoginPage from "./pages/LoginPage.vue";
 import MenuBar from "./components/MenuBar.vue";
-import PageContent from "./components/PageContent.vue";
 </script>
 
 <template>
   <div>
     <MenuBar></MenuBar>
-    <PageContent></PageContent>
+    <LoginPage></LoginPage>
   </div>
 </template>

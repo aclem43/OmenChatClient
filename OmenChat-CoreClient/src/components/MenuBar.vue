@@ -1,20 +1,41 @@
 <script setup lang="ts">
-import Cog from "vue-material-design-icons/Cog.vue";
+import DropDown from "./DropDown.vue";
+
+import SvgIcon from "@jamescoyle/vue-icon";
+import { mdiChevronDown, mdiCog } from "@mdi/js";
 </script>
 
 <template>
   <div class="MenuBar">
     <div class="Group">
       <div class="Button">
-        <div class="TextAlign">Home</div>
+        <div class="TextAlign">OmenChat Core Client</div>
       </div>
+      <DropDown color="var(--dark-content-bg-color)" width="10px">
+        <template #title>
+          <div style="text-align: center">
+            <SvgIcon type="mdi" :path="mdiChevronDown"></SvgIcon>
+          </div>
+        </template>
+        <template #content>
+          <div>
+            <SvgIcon type="mdi" :path="mdiCog"></SvgIcon>
+          </div>
+        </template>
+      </DropDown>
     </div>
     <div class="Group">
       <div class="Button">
-        <div class="TextAlign">OmenChat Core Client</div>
-      </div>
-      <div class="Button">
-        <Cog class="TextAlign"></Cog>
+        <DropDown color="var(--dark-content-bg-color)" width="10px">
+          <template #title>
+            <SvgIcon type="mdi" :path="mdiChevronDown"></SvgIcon>
+          </template>
+          <template #content>
+            <div>
+              <SvgIcon type="mdi" :path="mdiCog"></SvgIcon>
+            </div>
+          </template>
+        </DropDown>
       </div>
     </div>
   </div>

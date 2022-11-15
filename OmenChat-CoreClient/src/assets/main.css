@@ -3,11 +3,39 @@
   --dark-text-color: white;
   --dark-highlights-color: #720000;
   --dark-content-bg-color: #a30000;
-  --dark-content-highlight-color: #3d080d;
+  --dark-content-highlight-color: #6b0000;
+  --dark-content-darkhighlight-color: #3d080d;
+
+  --dark-notactive-color: rgb(211, 210, 210);
+  --dark-active-color: white;
 }
 
 body {
   margin: 0;
   color: var(--dark-text-color);
   background-color: var(--dark-bg-color);
+  font-family: Ubuntu;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("./Ubuntu-Regular.ttf");
+}
+
+.Input {
+  width: 250px;
+  outline: none;
+  border: grey;
+  border-radius: 5px;
+  line-height: 20px;
+  background-color: var(--dark-notactive-color);
+}
+.Input:focus {
+  background-color: var(--dark-active-color);
+}
+@media only screen and (max-width: 768px) {
+  .Input {
+    width: 150px;
+  }
 }

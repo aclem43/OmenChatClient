@@ -4,7 +4,9 @@
   <div class="Content">
     <div class="Page">
       <div class="PageTitle"><slot name="title"></slot></div>
-      <div class="PageContent" name="content"></div>
+      <div class="PageContent">
+        <slot name="content"> </slot>
+      </div>
     </div>
   </div>
 </template>
@@ -25,10 +27,10 @@
   border-radius: 20px;
 }
 .PageTitle {
-  height: 10%;
+  height: 8%;
 }
 .PageContent {
-  height: 90%;
+  height: 92%;
   border-radius: 20px;
   background-color: var(--dark-content-bg-color);
 }

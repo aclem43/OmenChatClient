@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import DropDown from "./DropDown.vue";
-
 import SvgIcon from "@jamescoyle/vue-icon";
 import { mdiChevronDown, mdiCog } from "@mdi/js";
 </script>
@@ -11,18 +10,6 @@ import { mdiChevronDown, mdiCog } from "@mdi/js";
       <div class="Button">
         <div class="TextAlign">OmenChat Core Client</div>
       </div>
-      <DropDown color="var(--dark-content-bg-color)" width="10px">
-        <template #title>
-          <div style="text-align: center">
-            <SvgIcon type="mdi" :path="mdiChevronDown"></SvgIcon>
-          </div>
-        </template>
-        <template #content>
-          <div>
-            <SvgIcon type="mdi" :path="mdiCog"></SvgIcon>
-          </div>
-        </template>
-      </DropDown>
     </div>
     <div class="Group">
       <div class="Button">
@@ -31,7 +18,7 @@ import { mdiChevronDown, mdiCog } from "@mdi/js";
             <SvgIcon type="mdi" :path="mdiChevronDown"></SvgIcon>
           </template>
           <template #content>
-            <div>
+            <div class="Button">
               <SvgIcon type="mdi" :path="mdiCog"></SvgIcon>
             </div>
           </template>
@@ -59,9 +46,18 @@ import { mdiChevronDown, mdiCog } from "@mdi/js";
 .Button {
   background-color: var(--dark-content-bg-color);
   padding: 5px;
+}
+
+.DropDownButton {
+  background-color: var(--dark-content-bg-color);
+  width: 100%;
+}
+.DropDownButton:hover {
+  background-color: var(--dark-highlights-color);
   cursor: pointer;
 }
 .Button:hover {
   background-color: var(--dark-highlights-color);
+  cursor: pointer;
 }
 </style>

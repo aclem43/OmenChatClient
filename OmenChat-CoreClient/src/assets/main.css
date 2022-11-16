@@ -26,7 +26,6 @@ body {
 .Input {
   width: 250px;
   outline: none;
-  border: grey;
   border-radius: 5px;
   line-height: 20px;
   background-color: var(--dark-notactive-color);
@@ -34,8 +33,12 @@ body {
 .Input:focus {
   background-color: var(--dark-active-color);
 }
+.Title {
+  font-size: x-large;
+  padding: 15px;
+}
 @media only screen and (max-width: 768px) {
   .Input {
-    width: 150px;
+    width: 200px;
   }
 }

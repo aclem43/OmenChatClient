@@ -22,11 +22,11 @@ const props = defineProps(["color", "width"]);
   background-color: v-bind(color);
   min-width: v-bind(width);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 5px;
   z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  transform: translateX(-5px);
 }
 </style>

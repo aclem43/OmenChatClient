@@ -22,12 +22,12 @@ const login = () => {
               <input class="Input" placeholder="Username" />
             </div>
             <div class="InputContainer">
-              <input class="Input" placeholder="Password" />
+              <input class="Input" type="password" placeholder="Password" />
             </div>
           </div>
           <div class="ButtonGroup">
             <div class="LoginButton" @click="login">Login</div>
-            <div class="LoginButton">New Account</div>
+            <div class="LoginButton">Sign Up</div>
             <div class="LoginButton">Forgot?</div>
           </div>
         </div>
@@ -47,6 +47,11 @@ const login = () => {
 }
 .Input {
   border: 2px black solid;
+  border-radius: 15px;
+  padding: 10px;
+  width: 80%;
+  line-height: 15px;
+  font-size: large;
 }
 
 .ButtonGroup {
@@ -77,10 +82,6 @@ const login = () => {
   background-color: var(--dark-content-highlight-color);
   cursor: pointer;
 }
-.Container {
-  height: 100%;
-  padding: 15px;
-}
 
 .LoginCard {
   background-color: var(--dark-content-highlight-color);
@@ -102,6 +103,10 @@ const login = () => {
   }
   .ButtonGroup {
     width: 90%;
+  }
+  .Input {
+    line-height: 10px;
+    font-size: medium;
   }
 }
 </style>

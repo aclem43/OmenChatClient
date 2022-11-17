@@ -1,13 +1,14 @@
 :root {
-  --dark-bg-color: rgb(41, 41, 41);
-  --dark-text-color: white;
+  --dark-bg-color: #292929;
+  --dark-text-color: #ffffff;
   --dark-highlights-color: #720000;
   --dark-content-bg-color: #a30000;
   --dark-content-highlight-color: #6b0000;
   --dark-content-darkhighlight-color: #3d080d;
 
-  --dark-notactive-color: rgb(211, 210, 210);
-  --dark-active-color: white;
+  --dark-disabled-color: #a9a9a9;
+  --dark-notactive-color: #d3d2d2;
+  --dark-active-color: #ffffff;
 }
 
 body {
@@ -23,8 +24,26 @@ body {
   src: url("./Ubuntu-Regular.ttf");
 }
 
+.Title {
+  font-size: x-large;
+  padding: 15px;
+}
+.Container {
+  height: 100%;
+  padding: 15px;
+}
+
+/* --- Useful Classes --- */
+
+.Flex {
+  display: flex;
+}
+
+/* --- Inputs --- */
+
+/* TODO Search Only affecting input type text and password */
 .Input {
-  width: 250px;
+  min-width: 250px;
   outline: none;
   border-radius: 5px;
   line-height: 20px;
@@ -33,12 +52,12 @@ body {
 .Input:focus {
   background-color: var(--dark-active-color);
 }
-.Title {
-  font-size: x-large;
-  padding: 15px;
+.Input:disabled {
+  background-color: var(--dark-disabled-color);
 }
+
 @media only screen and (max-width: 768px) {
   .Input {
-    width: 200px;
+    min-width: 200px;
   }
 }

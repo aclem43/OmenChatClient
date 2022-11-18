@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import DropDown from "./DropDown.vue";
+import DropDown from "../DropDown.vue";
 import SvgIcon from "@jamescoyle/vue-icon";
 import { mdiChevronDown, mdiCog } from "@mdi/js";
 </script>
@@ -7,7 +7,7 @@ import { mdiChevronDown, mdiCog } from "@mdi/js";
 <template>
   <div class="MenuBar">
     <div class="Group">
-      <div class="Button">
+      <div class="Button Corner">
         <div class="TextAlign">OmenChat Core Client</div>
       </div>
     </div>
@@ -41,23 +41,5 @@ import { mdiChevronDown, mdiCog } from "@mdi/js";
 }
 .TextAlign {
   margin: 5px;
-}
-
-.Button {
-  background-color: var(--dark-content-bg-color);
-  padding: 5px;
-}
-
-.DropDownButton {
-  background-color: var(--dark-content-bg-color);
-  width: 100%;
-}
-.DropDownButton:hover {
-  background-color: var(--dark-highlights-color);
-  cursor: pointer;
-}
-.Button:hover {
-  background-color: var(--dark-highlights-color);
-  cursor: pointer;
 }
 </style>

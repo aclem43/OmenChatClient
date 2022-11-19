@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import GroupDisplay from "@/components/GroupDisplay.vue";
 import PageLayout from "@/components/PageLayout.vue";
 import SvgIcon from "@jamescoyle/vue-icon";
 import { mdiMagnify, mdiPlus, mdiRefresh } from "@mdi/js";
@@ -9,34 +10,37 @@ import { mdiMagnify, mdiPlus, mdiRefresh } from "@mdi/js";
       <div class="Title">Welcome"USERNAME"</div>
     </template>
     <template #content>
-      <div class="Container">
+      <div class="Container SpaceContainer">
         <div class="SearchContainer">
           <div class="Flex">
             <input type="text" class="Input" placeholder="Search..." />
-            <div class="Button AutoMargin Round-15">
+            <div class="Button AutoMargin ButtonMargin Round-15">
               <SvgIcon type="mdi" :path="mdiMagnify"></SvgIcon>
             </div>
-            <div class="Button AutoMargin Round-15">
+            <div class="Button AutoMargin ButtonMargin Round-15">
               <SvgIcon type="mdi" :path="mdiPlus"></SvgIcon>
             </div>
-            <div class="Button AutoMargin Round-15">
+            <div class="Button AutoMargin ButtonMargin Round-15">
               <SvgIcon type="mdi" :path="mdiRefresh"></SvgIcon>
             </div>
           </div>
         </div>
-        <div class="GroupContainer">a</div>
+        <div class="GroupOptionsContainer">
+          <GroupDisplay></GroupDisplay>
+        </div>
       </div>
     </template>
   </PageLayout>
 </template>
 
 <style>
-.GroupContainer {
+.GroupOptionsContainer {
   background-color: var(--dark-content-highlight-color);
   margin-top: 15px;
+  padding: 10px;
 
-  height: calc(100% - 110px);
   border-radius: 10px;
+  flex-grow: 1;
 }
 
 .AutoMargin {

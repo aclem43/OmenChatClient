@@ -5,7 +5,7 @@ import PageLayout from "../components/PageLayout.vue";
 
 const login = () => {
   setLoggedIn(true);
-  router.push("Select");
+  router.push("select");
 };
 </script>
 
